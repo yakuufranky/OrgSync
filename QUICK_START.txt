@@ -1,0 +1,19 @@
+ORGSYNC - QUICK START
+
+1. Extract this ZIP to a folder.
+2. Make sure PHP is installed and available in your Windows PATH.
+3. Double-click OPEN_ORGSYNC.bat.
+4. Your browser should open http://127.0.0.1:8000/
+
+NOTE: This project uses PHP and a MySQL database. For login/registration features, configure MySQL and import database/schema.sql into a database named orgsync_db (or update app/Config/config.php). If you use XAMPP, start MySQL in the XAMPP Control Panel.
+
+If the browser opens but shows a database error, the web server is running but the database has not been configured.
+
+
+DASHBOARD + REGISTRATION INTEGRATION
+- Start the app using the same XAMPP/PHP server and database setup described above.
+- Open /register to create an account (or use the role-selection flow already in the app).
+- Log in at /login. Successful login redirects to /dashboard.
+- The dashboard header uses the signed-in account name/role/organization and its Log out link returns to /login.
+- Registration/login are handled by the PHP app and database. Dashboard activity data (members/events/attendance) is currently saved in browser localStorage, not in MySQL.
+- Dashboard visual colors now use the same purple/indigo/pink gradient family as the registration pages.

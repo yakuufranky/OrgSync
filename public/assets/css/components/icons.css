@@ -1,0 +1,28 @@
+/**
+ * Icon System Styles (Lucide Integration)
+ */
+.lucide, .icon-lucide {
+    display: inline-block;
+    vertical-align: middle;
+    stroke-width: 2px;
+}
+
+.input-icon .lucide, .input-icon .icon-lucide {
+    width: 18px;
+    height: 18px;
+}
+
+.feature-icon .lucide, .feature-icon .icon-lucide {
+    width: 20px;
+    height: 20px;
+}
+
+.btn .lucide, .btn .icon-lucide {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-toggle-password .lucide, .btn-toggle-password .icon-lucide {
+    width: 18px;
+    height: 18px;
+}

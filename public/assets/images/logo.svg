@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="orgRing" x1="20" y1="220" x2="220" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6D28D9"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="orgGlow" x1="40" y1="40" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Orbital Ring Back Arc -->
+  <path d="M 28 148 C 15 110 40 68 85 45 C 130 22 185 30 208 65" 
+        stroke="url(#orgRing)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Main Circular Portal -->
+  <circle cx="120" cy="115" r="62" stroke="url(#orgRing)" stroke-width="16" fill="none"/>
+
+  <!-- Center Leader Avatar -->
+  <circle cx="120" cy="92" r="13" fill="url(#orgGlow)"/>
+  <path d="M 102 124 C 102 114 110 109 120 109 C 130 109 138 114 138 124 Z" fill="url(#orgGlow)"/>
+
+  <!-- Left Member Avatar -->
+  <circle cx="94" cy="99" r="10" fill="url(#orgGlow)"/>
+  <path d="M 80 125 C 80 117 86 113 94 113 C 99 113 103 115 106 119 C 103 123 98 125 94 125 Z" fill="url(#orgGlow)"/>
+
+  <!-- Right Member Avatar -->
+  <circle cx="146" cy="99" r="10" fill="url(#orgGlow)"/>
+  <path d="M 160 125 C 160 117 154 113 146 113 C 141 113 137 115 134 119 C 137 123 142 125 146 125 Z" fill="url(#orgGlow)"/>
+
+  <!-- Front Orbital Ring Arc -->
+  <path d="M 215 95 C 228 135 195 182 142 201 C 88 220 35 200 15 160" 
+        stroke="url(#orgRing)" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Orbital Node Satellite -->
+  <circle cx="212" cy="74" r="9" fill="#8B5CF6"/>
+</svg>

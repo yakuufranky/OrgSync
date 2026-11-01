@@ -1,0 +1,168 @@
+/**
+ * Authentication Split-Screen Layout
+ */
+
+/* Background Atmosphere */
+body.auth-page {
+    background-color: #EDE8F8;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+}
+
+/* Master Container & Split Grid */
+.auth-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.auth-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.22fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* Left Hero Branding */
+.auth-branding {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.branding-content {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-wrapper {
+    margin-bottom: 12px;
+    filter: drop-shadow(0 12px 24px rgba(124, 58, 237, 0.2));
+}
+
+.brand-logo {
+    display: block;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.brand-title {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: #0B1120;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.brand-tagline {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E1B4B;
+    margin-bottom: 14px;
+}
+
+.brand-description {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 34px;
+}
+
+.brand-features {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: var(--brand-purple);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.12);
+}
+
+.feature-text {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    line-height: 1.35;
+    text-align: center;
+}
+
+/* Right Panel: White Card */
+.auth-form-panel {
+    width: 100%;
+}
+
+.form-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+    padding: 38px 42px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Card Header Navigation */
+.form-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    min-height: 32px;
+}
+
+/* Form Headings */
+.form-header {
+    margin-bottom: 22px;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0F172A;
+    line-height: 1.2;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #A855F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    line-height: 1.5;
+}

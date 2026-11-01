@@ -1,0 +1,19 @@
+/**
+ * Base Reset & Document Styles
+ */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.hidden { display: none !important; }

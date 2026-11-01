@@ -1,0 +1,241 @@
+/**
+ * Responsive Breakpoints & Mobile Adaptations
+ */
+
+/* Tablets & Small Laptops (<= 980px) */
+@media (max-width: 980px) {
+    .auth-card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .auth-branding {
+        padding: 16px 12px;
+    }
+
+    .brand-title {
+        font-size: 32px;
+    }
+
+    .form-card {
+        padding: 30px 28px;
+    }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+    body.auth-page {
+        padding: 16px 12px;
+        align-items: flex-start;
+    }
+
+    .auth-card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    /* Transform Hero into compact mobile header */
+    .auth-branding {
+        padding: 8px 0 4px 0;
+    }
+
+    .branding-content {
+        max-width: 100%;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 4px;
+    }
+
+    .brand-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .brand-title {
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+
+    .brand-tagline {
+        font-size: 13px;
+        font-weight: 600;
+        color: #4338CA;
+        margin-bottom: 0;
+    }
+
+    /* Hide desktop marketing filler on phones */
+    .brand-description,
+    .brand-features {
+        display: none !important;
+    }
+
+    /* Mobile Form Card */
+    .form-card {
+        padding: 24px 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+    }
+
+    .form-header-nav {
+        margin-bottom: 14px;
+        min-height: 28px;
+    }
+
+    .btn-back {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-link {
+        font-size: 13px;
+    }
+
+    .form-header {
+        margin-bottom: 16px;
+    }
+
+    .form-title {
+        font-size: 23px;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+        margin-top: 4px;
+        line-height: 1.45;
+    }
+
+    /* Forms & Inputs */
+    .form-grid-2col {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-label {
+        font-size: 12.5px;
+        margin-bottom: 4px;
+    }
+
+    .form-control {
+        height: 46px;
+        font-size: 14px;
+        padding-left: 40px;
+    }
+
+    .input-icon {
+        left: 12px;
+    }
+
+    .form-row-utility {
+        margin-bottom: 16px;
+        font-size: 12.5px;
+    }
+
+    .btn {
+        height: 46px;
+        font-size: 14px;
+    }
+
+    /* Role Selection on Mobile */
+    .role-cards-grid {
+        gap: 12px;
+        margin: 16px 0 20px 0;
+    }
+
+    .role-cards-subgrid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .role-card {
+        padding: 16px 14px;
+    }
+
+    .role-card-icon {
+        min-height: 36px;
+        margin-bottom: 6px;
+    }
+
+    .role-card-desc {
+        display: none;
+    }
+
+    .role-btn {
+        height: 42px;
+        font-size: 13.5px;
+    }
+
+    /* Alerts and Notices */
+    .alert {
+        padding: 10px 14px;
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .info-notice {
+        padding: 10px 14px;
+        margin: 12px 0;
+        gap: 10px;
+    }
+
+    .info-notice-text {
+        font-size: 12.5px;
+    }
+
+    /* Success Screen on Mobile */
+    .icon-ring {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-ring .icon-lucide {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .code-display-block {
+        padding: 10px 18px;
+        margin: 12px 0;
+    }
+
+    .code-large {
+        font-size: 20px;
+    }
+}
+
+/* Extra Small Phones (<= 420px) */
+@media (max-width: 420px) {
+    body.auth-page {
+        padding: 12px 8px;
+    }
+
+    .form-card {
+        padding: 20px 16px;
+        border-radius: 18px;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-title {
+        font-size: 22px;
+    }
+
+    .form-title {
+        font-size: 21px;
+    }
+
+    .header-link {
+        font-size: 12px;
+    }
+}
